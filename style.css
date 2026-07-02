@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tahoma", Arial, sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    width: 340px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.card input[type="text"],
+.card input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    background: #2c7be5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #1a5fc0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #2c7be5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.msg {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.msg.error {
+    background: #fdecea;
+    color: #b71c1c;
+}
+
+.msg.success {
+    background: #e6f4ea;
+    color: #1e7e34;
+}
+
+.home-box {
+    text-align: center;
+}
+
+.home-box .username {
+    color: #2c7be5;
+    font-weight: bold;
+}

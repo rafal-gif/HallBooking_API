@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION["user_id"])) {
-    header("Location: login.php");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -16,8 +8,10 @@ if (!isset($_SESSION["user_id"])) {
 <body>
     <div class="card home-box">
         <h2>الصفحة الرئيسية</h2>
-        <p>أهلاً بك، <span class="username"><?= htmlspecialchars($_SESSION["username"]) ?></span></p>
-        <a href="logout.php">تسجيل الخروج</a>
+        <p>أهلاً بك، <span class="username" id="usernameDisplay"></span></p>
+        <a href="#" id="logoutBtn">تسجيل الخروج</a>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
